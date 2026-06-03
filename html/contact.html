@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>advies aanvragen</title>
+    <meta name="Opgeven gegevens" content="Opgeven gegevens">
+</head>   
+<!-- hieronder volgt het formulier-->
+    <body>
+        <h1>Vul hieronder uw gegevens en wij nemen contact met u op</h1><br><br>
+    <form id="opleidingmail1" method="post" action="https://formspree.io/f/mykvgvvw">
+        <fieldset>
+            <legend>Persoonlijke Gegevens:</legend><br>
+                <label for="naam">Naam:</label>
+                    <input id="naam" type="text" name="naam"><br><br>
+            <table>
+                <tr>
+                    <td>Geslacht:</td>
+                    <td>
+                            <input type="radio" name="geslacht" value="man">Man
+                            <input type="radio" name="geslacht" value="vrouw">Vrouw
+                    </td>
+                </tr>
+            </table><br>
+            <table>
+                <tr>
+                    <td>
+                        <label for="postcode">Postcode:</label>
+                            <input id="postcode" type="text" name="postcode....:" maxlength="6" size="6">
+                    </td>
+                    <td>
+                        <label for="woonplaats">Woonplaats:</label>
+                            <input id="woonplaats" type="text" name="woonplaats..:" placeholder="woonplaats">
+                    </td>
+                    <td>
+                        <label for="Provincie">Provincie:</label>
+                            <input id="Provincie" type="text">
+                                <select name="Provincie">
+                                    <option value="Friesland" selected>FR</option>
+                                    <option value="Groningen">GR</option>
+                                    <option value="Drenthe">DR</option>
+                                </select>
+                    </td> 
+                </tr>
+            </table><br>
+        </fieldset>
+        <fieldset>
+            <legend>Mailadres en Telefoonnummetr:</legend><br>
+                <label for="mail">Mail</label>
+                    <input id="mail" type="email" name="mailadres"><br><br>
+                <label for="telefoon">Telefoon</label>
+                    <input id="telefoon" type="tel" name="telefoonnummer"><br><br>
+        </fieldset><br><br>
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="submit" value="Verzend">
+    </form>
+ </body>
+</html>
